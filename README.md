@@ -2,18 +2,27 @@
 
 A tiny [Hammerspoon](https://www.hammerspoon.org/) config that turns your number
 keys into a Minecraft-style **inventory bar for apps**. Bind your most-used apps
-to slots `1`–`6` and jump straight to any of them with a single keystroke —
-faster than Mission Control, `⌘Tab`, or hunting through windows.
+to slots `1`–`9` and jump straight to any of them with a single keystroke —
+faster than Mission Control, `⌘Tab`, or hunting through windows. Press `⌥0` to
+pop up a visual HUD showing which app lives in which slot.
 
 ## Keybindings
 
 | Shortcut     | Action                                                        |
 |--------------|---------------------------------------------------------------|
-| `⌥1` … `⌥6`  | Switch to the app in that slot (launches it if not running)   |
-| `⌥⌘1` … `⌥⌘6`| Bind the **currently focused** app to that slot               |
+| `⌥1` … `⌥9`  | Switch to the app in that slot (launches it if not running)   |
+| `⌥⌘1` … `⌥⌘9`| Bind the **currently focused** app to that slot               |
+| `⌥0`         | Show/hide the inventory bar HUD (app icons per slot)          |
 | `⌥⌘0`        | Clear all slots                                               |
 
 `⌥` = Option/Alt, `⌘` = Command.
+
+## The HUD
+
+Press `⌥0` and a horizontal bar appears near the bottom of your screen: nine
+numbered cells, each assigned app shown with its **actual icon** and name, empty
+slots dimmed. It auto-dismisses after a couple seconds, or press `⌥0` again to
+hide it. Handy while you're still learning which app is on which number.
 
 ## How it works
 
